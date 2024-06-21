@@ -21,7 +21,7 @@ export default function Home() {
         </div>
         <div className="px-4 lg:px-16 md:pr-8 lg:pr-16 2xl:pr-64 w-full py-20 lg:py-0 flex flex-col gap-4">
           <h2 className="text-xl lg:text-3xl 2xl:text-5xl">
-            Heart disease is the #1 cause of death in the United States.
+            Heart disease is the #1 cause of death in the United Kingdom.
           </h2>
           <h1 className="text-5xl font-semibold">
             80% of cases are preventable.
