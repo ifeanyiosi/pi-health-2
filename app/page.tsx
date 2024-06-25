@@ -19,14 +19,14 @@ export default function Home() {
             alt=""
           />
         </div>
-        <div className="px-4 lg:px-16 md:pr-8 lg:pr-16 2xl:pr-64 w-full py-20 lg:py-0 flex flex-col gap-4">
-          <h2 className="text-xl lg:text-3xl 2xl:text-5xl">
+        <div className="px-4 lg:px-16 md:pr-8 lg:pr-16 2xl:pr-64 w-full py-20 lg:py-0 flex flex-col ">
+          <h2 className="text-[1rem] md:text-[1.75rem] ">
             Heart disease is the #1 cause of death in the United Kingdom.
           </h2>
-          <h1 className="text-5xl font-semibold">
+          <h1 className="text-xl md:text-[2rem] leading-[20px] mt-8 font-semibold">
             80% of cases are preventable.
           </h1>
-          <p className="text-xl ">
+          <p className="text-[1.25rem] mt-[64px] ">
             We are advancing our mission with end-to-end cardiological care and
             services for consumers, patients, providers and payers that use
             state-of-the-art tools to improve diagnosis and treatment and help
@@ -40,14 +40,14 @@ export default function Home() {
           priority
           className="lg:flex object-cover hidden  "
           fill
-          src="https://images.pexels.com/photos/3184394/pexels-photo-3184394.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          src="/team-dr.jpg"
           alt=""
         />
 
         <div className="lg:absolute  bg-primary lg:rounded-md backdrop-blur-md  md:max-w-[1000px] w-full">
           <div className="lg:p-20 p-4 text-white">
             <h1 className="text-[36px] font-bold">Our solutions</h1>
-            <h2 className="text-[16px] mt-12">
+            <p className="text-[20px] font-[400] leading-6 tracking-wide mt-4">
               Pi-Health was established on the foundation of its unique
               technologies: AI-driven, machine learning-enhanced ECG sensors
               that provide medical-grade heart data at any time and from any
@@ -55,7 +55,7 @@ export default function Home() {
               and share their health information, as well as connect with
               cardiologists to gain better insights into their heart health and
               manage it more effectively.
-            </h2>
+            </p>
           </div>
         </div>
       </div>
@@ -63,22 +63,26 @@ export default function Home() {
       <div className="px-4 md:px-8 lg:px-16 2xl:px-64  w-full flex flex-col items-center my-20 lg:my-40 ">
         <div className="w-full flex items-center gap-4 mb-[40px] lg:mb-[120px]">
           {" "}
-          <h1 className="text-2xl font-bold text-primary/90">Our Customers</h1>
+          <h1 className="text-[36px] font-bold text-primary/90 ">
+            Our Customers
+          </h1>
           <div className="h-[1px] bg-primary/50 w-[500px]" />
         </div>
-        <div className="flex w-full justify-between gap-8 ">
+        <div className="flex w-full justify-between gap-16 ">
           <div className="flex flex-col gap-8">
             {whatCustomersDo.map((item) => (
               <div key={item.desc} className="flex items-center gap-4">
                 <div>
                   <item.icon className="text-[50px] text-primary" />
                 </div>
-                <div className="text-gray-500">{item.desc}</div>
+                <div className="text-gray-500 text-[16px] lg:text-[20px]">
+                  {item.desc}
+                </div>
               </div>
             ))}
           </div>
-          <div className="w-full lg:flex hidden">
-            <div className="relative w-[500px] h-[300px] flex items-center justify-center">
+          <div className="w-full lg:flex hidden  justify-center">
+            <div className="relative w-[500px] h-[500px] flex items-center justify-center">
               <Image
                 priority
                 className="lg:flex object-cover hidden  "
@@ -91,9 +95,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full bg-primary-foreground min-h-screen px-4 md:px-8 lg:px-16 2xl:px-64 py-20 lg:py-40 ">
+      <div className="w-full bg-[#009fdf]/10 min-h-screen px-4 md:px-8 lg:px-16 2xl:px-64 py-20 lg:py-40 ">
         <div className="w-full flex flex-col gap-4 mb-[40px] lg:mb-[120px]">
-          <h1 className="text-2xl font-bold text-black/90">
+          <h1 className="text-2xl lg:text-[36px] font-bold text-[rgb(51,51,51)]">
             Discover our products & solutions
           </h1>
 
@@ -101,11 +105,16 @@ export default function Home() {
             {productsAndSolutions.map((item, index) => (
               <div key={item.href}>
                 <div className="flex flex-col gap-8">
-                  <Link className="flex flex-col text-xl py-3 gap-8" href={item.href}>
+                  <Link
+                    className="flex flex-col text-xl text-[#009fdf] py-3 gap-8"
+                    href={item.href}
+                  >
                     {item.name}
                   </Link>
                 </div>
-                {index < productsAndSolutions.length - 1 && <Separator className="bg-gray-300 lg:w-[300px]"  />}
+                {index < productsAndSolutions.length - 1 && (
+                  <Separator className="bg-[#009fdf]/50 lg:w-[300px]" />
+                )}
               </div>
             ))}
           </div>
