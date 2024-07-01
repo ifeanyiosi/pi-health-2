@@ -64,7 +64,7 @@ export default function Home() {
       </section>
 
       <div className="w-full flex flex-col py-[100px] items-center justify-center text-[#212529] ">
-        <h1 className="text-[18px] md:text-[32px] font-bold">
+        <h1 className="text-[18px] text-center md:text-[32px] font-bold">
           Did you know? Our products are distributed worldwide.
         </h1>
         <Link
