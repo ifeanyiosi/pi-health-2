@@ -1,6 +1,8 @@
 import Slider from "@/components/Slider";
+import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { productsAndSolutions, whatCustomersDo } from "@/constants";
+import { heroLinks, productsAndSolutions, whatCustomersDo } from "@/constants";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,115 +11,158 @@ export default function Home() {
     <div>
       <Slider />
 
-      <div className="flex flex-col lg:flex-row items-center justify-between">
+      <section className="flex flex-col lg:flex-row my-4 lg:my-8 items-center justify-between px-4 md:px-8 lg:px-16 2xl:px-64">
+        <div className="relative h-[500px] lg:h-[600px] w-full ">
+          {" "}
+          <Image fill className="flex object-cover" src="/pi-app.jpg" alt="" />
+        </div>
+        <div className="px-4 lg:px-16 w-full py-20 lg:py-0 flex flex-col ">
+          <h2 className="text-[1rem] md:text-[1.75rem] font-bold ">
+            The new Pi-Sense app: it&apos;s all about you.
+          </h2>
+
+          <p className="text-[1.25rem] lg:mt-8 mt-4 leading-relaxed ">
+            Designed to keep you close to your goals, boost your motivation and
+            show your progress on your health and fitness journey.
+          </p>
+
+          <Link
+            className="mt-4 lg:mt-8 flex items-center gap-2 text-[16px] font-bold md:text-[18px]"
+            href="/"
+          >
+            Learn More <ArrowRight />{" "}
+          </Link>
+        </div>
+      </section>
+
+      <section className="w-full h-full grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {heroLinks.map((item, index) => (
+          <div key={item.image} className="relative h-[400px]">
+            <Image
+              fill
+              className="absolute inset-0 w-full h-full object-cover z-0"
+              src={item.image}
+              alt=""
+            />
+
+            <div className="relative z-10 flex flex-col items-start justify-end text-center h-full px-6 md:px-8 ">
+              <h2 className="text-[1rem] md:text-[20px] uppercase font-bold text-white">
+                {item.heading}
+              </h2>
+
+              <Button asChild variant="outline">
+                <Link
+                  className="mt-4 lg:mt-8 flex items-center gap-2 uppercase text-[16px]  md:text-[18px mb-4"
+                  href="/"
+                >
+                  {item.btnText} <ArrowRight />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        ))}
+      </section>
+
+      <div className="w-full flex flex-col py-[100px] items-center justify-center text-[#212529] ">
+        <h1 className="text-[18px] md:text-[32px] font-bold">
+          Did you know? Our products are distributed worldwide.
+        </h1>
+        <Link
+          className="mt-4 lg:mt-8 flex items-center gap-2 text-[16px] font-bold md:text-[18px]"
+          href="/"
+        >
+          Read more on the blog <ArrowRight />{" "}
+        </Link>
+      </div>
+
+      <section className="w-full h-full px-4 md:px-8 lg:px-16 2xl:px-64 flex flex-col gap-8">
+        <div className="flex flex-col lg:flex-row w-full">
+          <div className="relative h-[400px] lg:h-[300px] w-full ">
+            <Image
+              fill
+              className="flex object-cover"
+              src="/research.jpg"
+              alt=""
+            />
+          </div>
+
+          <div className="w-full lg:px-8 text-[#212529] flex flex-col items-start justify-center">
+            <h1 className="text-[28px] l lg:text-[32px]  font-bold">
+              Research and Development
+            </h1>
+            <p className="leading-relaxed tracking-wide mt-4">
+              At PI Health, we drive innovation through cutting-edge Research
+              and Development. Collaborating with top medical institutions, we
+              focus on advancing sensor technologies, AI-driven insights, and
+              rigorous clinical validation. Our goal is to pioneer personalized
+              health solutions that empower individuals and healthcare providers
+              with accurate and actionable data.
+            </p>
+            <Link
+              className="mt-4 lg:mt-8 flex items-center gap-2 text-[16px] font-bold md:text-[18px]"
+              href="/"
+            >
+              Learn more <ArrowRight />{" "}
+            </Link>
+          </div>
+        </div>
+        <div className="flex flex-col lg:flex-row-reverse w-full">
+          <div className="relative h-[400px] lg:h-[300px] w-full ">
+            <Image
+              fill
+              className="flex object-cover"
+              src="https://images.unsplash.com/photo-1631217875019-8cb2649c3478?q=80&w=1952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+
+          <div className="w-full lg:px-8 text-[#212529] flex flex-col items-start justify-center">
+            <h1 className="text-[28px] l lg:text-[32px]  font-bold">
+              Real stories from real people
+            </h1>
+            <p className="leading-relaxed tracking-wide mt-4">
+              At PI Health, we drive innovation through cutting-edge Research
+              and Development. Collaborating with top medical institutions, we
+              focus on advancing sensor technologies, AI-driven insights, and
+              rigorous clinical validation. Our goal is to pioneer personalized
+              health solutions that empower individuals and healthcare providers
+              with accurate and actionable data.
+            </p>
+            <Link
+              className="mt-4 lg:mt-8 flex items-center gap-2 text-[16px] font-bold md:text-[18px]"
+              href="/"
+            >
+              Learn more <ArrowRight />{" "}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <div className="flex flex-col lg:flex-row my-4 lg:my-8 items-center justify-between px-4 md:px-8 lg:px-16 2xl:px-64">
         <div className="relative h-[500px] lg:h-[600px] w-full ">
           {" "}
           <Image
             fill
             className="flex object-cover"
-            src="https://images.unsplash.com/photo-1631217875019-8cb2649c3478?q=80&w=1952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/diverse-doctors.jpg"
             alt=""
           />
         </div>
-        <div className="px-4 lg:px-16 md:pr-8 lg:pr-16 2xl:pr-64 w-full py-20 lg:py-0 flex flex-col ">
-          <h2 className="text-[1rem] md:text-[1.75rem] ">
-            Heart disease is the #1 cause of death in the United Kingdom.
+        <div className="px-4 lg:px-16 w-full py-20 lg:py-0 flex flex-col ">
+          <h2 className="text-[1rem] md:text-[1.75rem] font-bold ">
+            Our Mission and Vision
           </h2>
-          <h1 className="text-xl md:text-[2rem] leading-[20px] mt-8 font-semibold">
-            80% of cases are preventable.
-          </h1>
-          <p className="text-[1.25rem] mt-[64px] ">
-            We are advancing our mission with end-to-end cardiological care and
-            services for consumers, patients, providers and payers that use
-            state-of-the-art tools to improve diagnosis and treatment and help
-            reduce disparities in care.*Data on file
+
+          <p className="text-[1.25rem] lg:mt-8 mt-4 leading-relaxed ">
+            Our vision is to be a global leader in health technology, known for
+            our dedication to improving lives through innovation and excellence.
+            We aspire to create a future where wearable health devices
+            seamlessly integrate into daily life, offering invaluable insights
+            that promote proactive health management. By continually advancing
+            our products and services, we aim to set new standards in health
+            monitoring and data integration, ultimately transforming the way
+            people and healthcare providers approach health and wellness.
           </p>
-        </div>
-      </div>
-
-      <div className="w-full lg:h-screen relative flex items-center justify-center">
-        <Image
-          priority
-          className="lg:flex object-cover hidden  "
-          fill
-          src="/team-dr.jpg"
-          alt=""
-        />
-
-        <div className="lg:absolute  bg-primary lg:rounded-md backdrop-blur-md  md:max-w-[1000px] w-full">
-          <div className="lg:p-20 p-4 text-white">
-            <h1 className="text-[36px] font-bold">Our solutions</h1>
-            <p className="text-[20px] font-[400] leading-6 tracking-wide mt-4">
-              Pi-Health was established on the foundation of its unique
-              technologies: AI-driven, machine learning-enhanced ECG sensors
-              that provide medical-grade heart data at any time and from any
-              location. Our digital solutions enable patients to access, manage,
-              and share their health information, as well as connect with
-              cardiologists to gain better insights into their heart health and
-              manage it more effectively.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="px-4 md:px-8 lg:px-16 2xl:px-64  w-full flex flex-col items-center my-20 lg:my-40 ">
-        <div className="w-full flex items-center gap-4 mb-[40px] lg:mb-[120px]">
-          {" "}
-          <h1 className="text-[36px] font-bold text-primary/90 ">
-            Our Customers
-          </h1>
-          <div className="h-[1px] bg-primary/50 w-[500px]" />
-        </div>
-        <div className="flex w-full justify-between gap-16 ">
-          <div className="flex flex-col gap-8">
-            {whatCustomersDo.map((item) => (
-              <div key={item.desc} className="flex items-center gap-4">
-                <div>
-                  <item.icon className="text-[50px] text-primary" />
-                </div>
-                <div className="text-gray-500 text-[16px] lg:text-[20px]">
-                  {item.desc}
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="w-full lg:flex hidden  justify-center">
-            <div className="relative w-[500px] h-[500px] flex items-center justify-center">
-              <Image
-                priority
-                className="lg:flex object-cover hidden  "
-                fill
-                src="https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="w-full bg-[#009fdf]/10 min-h-screen px-4 md:px-8 lg:px-16 2xl:px-64 py-20 lg:py-40 ">
-        <div className="w-full flex flex-col gap-4 mb-[40px] lg:mb-[120px]">
-          <h1 className="text-2xl lg:text-[36px] font-bold text-[rgb(51,51,51)]">
-            Discover our products & solutions
-          </h1>
-
-          <div className="flex flex-col mt-10 gap-8">
-            {productsAndSolutions.map((item, index) => (
-              <div key={item.href}>
-                <div className="flex flex-col gap-8">
-                  <Link
-                    className="flex flex-col text-xl text-[#009fdf] py-3 gap-8"
-                    href={item.href}
-                  >
-                    {item.name}
-                  </Link>
-                </div>
-                {index < productsAndSolutions.length - 1 && (
-                  <Separator className="bg-[#009fdf]/50 lg:w-[300px]" />
-                )}
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </div>

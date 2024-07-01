@@ -16,10 +16,7 @@ export default function Navbar() {
         </Link>
         <div className="flex items-center gap-4">
           {" "}
-          <Link href="">
-            {" "}
-            <User2Icon />
-          </Link>
+          <Link href=""></Link>
           <MobileMenu />
         </div>
       </div>
@@ -27,14 +24,19 @@ export default function Navbar() {
       <div className="hidden lg:flex items-center justify-between gap-8 w-full h-full">
         <div className="w-full flex items-center gap-12 ">
           {" "}
-          <Link className="text-xl tracking-wide uppercase font-bold flex gap-2" href="/">
-           
+          <Link
+            className="text-xl tracking-wide uppercase font-bold flex gap-2"
+            href="/"
+          >
             Pi-Health
           </Link>
-          <div className="hidden xl:flex gap-4 ">
+        </div>
+
+        <div className="flex  items-center justify-end w-2/3 gap-4">
+          <div className="hidden xl:flex gap-8 ">
             {menuLinks.map((item) => (
               <Link
-                className="text-[#000] hover:text-primary"
+                className="text-[rgba(32,41,47,.6)] uppercase hover:text-[#000] hover:font-bold "
                 key={item.name}
                 href={item.href}
                 passHref
@@ -43,13 +45,6 @@ export default function Navbar() {
               </Link>
             ))}
           </div>
-        </div>
-
-        <div className="flex  items-center justify-end w-2/3 gap-4">
-          <Link href="">
-            {" "}
-            <User2Icon />
-          </Link>
         </div>
       </div>
     </div>

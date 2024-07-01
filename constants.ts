@@ -83,3 +83,36 @@ export const productsAndSolutions = [
     href: "/list",
   },
 ];
+
+export const heroLinks = [
+  {
+    image: "/doc-call.jpg",
+    heading: "monitor patients with pi-sense",
+    btnText: "learn more",
+  },
+  {
+    image: "/fitness.jpg",
+    heading: "browse wearables for women",
+    btnText: "shop",
+  },
+  {
+    image: "/diabetes.jpg",
+    heading: "Revolutionizing Diabetes Care with AI",
+    btnText: "learn more",
+  },
+  {
+    image: "/watch-product.jpg",
+    heading: "Can’t decide? We’ve got you covered.",
+    btnText: "learn more",
+  },
+  {
+    image: "/watch.jpg",
+    heading: "your custom smartwatch is waiting",
+    btnText: "learn more",
+  },
+  {
+    image: "/astro.jpg",
+    heading: "Pioneering Health in Space",
+    btnText: "learn more",
+  },
+];
