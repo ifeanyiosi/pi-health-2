@@ -1,4 +1,6 @@
-import Slider from "@/components/Slider";
+
+import HeroPage from "@/components/HeroPage";
+import JoinUs from "@/components/JoinUs";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { heroLinks, productsAndSolutions, whatCustomersDo } from "@/constants";
@@ -9,59 +11,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <Slider />
-
-      <section className="flex flex-col lg:flex-row my-4 lg:my-8 items-center justify-between px-4 md:px-8 lg:px-16 2xl:px-64">
-        <div className="relative h-[500px] lg:h-[600px] w-full ">
-          {" "}
-          <Image fill className="flex object-cover" src="/pi-app.jpg" alt="" />
-        </div>
-        <div className="px-4 lg:px-16 w-full py-20 lg:py-0 flex flex-col ">
-          <h2 className="text-[1rem] md:text-[1.75rem] font-bold ">
-            The new Pi-Sense app: it&apos;s all about you.
-          </h2>
-
-          <p className="text-[1.25rem] lg:mt-8 mt-4 leading-relaxed ">
-            Designed to keep you close to your goals, boost your motivation and
-            show your progress on your health and fitness journey.
-          </p>
-
-          <Link
-            className="mt-4 lg:mt-8 flex items-center gap-2 text-[16px] font-bold md:text-[18px]"
-            href="/"
-          >
-            Learn More <ArrowRight />{" "}
-          </Link>
-        </div>
-      </section>
-
-      <section className="w-full h-full grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {heroLinks.map((item, index) => (
-          <div key={item.image} className="relative h-[400px]">
-            <Image
-              fill
-              className="absolute inset-0 w-full h-full object-cover z-0"
-              src={item.image}
-              alt=""
-            />
-
-            <div className="relative z-10 flex flex-col items-start justify-end text-center h-full px-6 md:px-8 ">
-              <h2 className="text-[1rem] md:text-[20px] uppercase font-bold text-white">
-                {item.heading}
-              </h2>
-
-              <Button asChild variant="outline">
-                <Link
-                  className="mt-4 lg:mt-8 flex items-center gap-2 uppercase text-[16px]  md:text-[18px mb-4"
-                  href="/"
-                >
-                  {item.btnText} <ArrowRight />
-                </Link>
-              </Button>
-            </div>
-          </div>
-        ))}
-      </section>
+      <HeroPage />
 
       <div className="w-full flex flex-col py-[100px] items-center justify-center text-[#212529] ">
         <h1 className="text-[18px] text-center md:text-[32px] font-bold">
@@ -76,7 +26,7 @@ export default function Home() {
       </div>
 
       <section className="w-full h-full px-4 md:px-8 lg:px-16 2xl:px-64 flex flex-col gap-8">
-        <div className="flex flex-col lg:flex-row w-full">
+        <div className="flex flex-col lg:flex-row w-full ">
           <div className="relative h-[400px] lg:h-[300px] w-full ">
             <Image
               fill
@@ -86,7 +36,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="w-full lg:px-8 text-[#212529] flex flex-col items-start justify-center">
+          <div className="w-full lg:px-8 text-[#212529] flex flex-col mt-4 lg:mt-0 items-start justify-center">
             <h1 className="text-[28px] l lg:text-[32px]  font-bold">
               Research and Development
             </h1>
@@ -116,7 +66,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="w-full lg:px-8 text-[#212529] flex flex-col items-start justify-center">
+          <div className="w-full lg:px-8 text-[#212529] mt-4 lg:mt-0 flex flex-col items-start justify-center">
             <h1 className="text-[28px] l lg:text-[32px]  font-bold">
               Real stories from real people
             </h1>
@@ -148,8 +98,8 @@ export default function Home() {
             alt=""
           />
         </div>
-        <div className="px-4 lg:px-16 w-full py-20 lg:py-0 flex flex-col ">
-          <h2 className="text-[1rem] md:text-[1.75rem] font-bold ">
+        <div className="px-4 lg:px-16 w-full py-10 lg:py-0 flex flex-col ">
+          <h2 className="text-[20px] md:text-[1.75rem] font-bold ">
             Our Mission and Vision
           </h2>
 
@@ -165,6 +115,10 @@ export default function Home() {
           </p>
         </div>
       </div>
+
+
+
+      <JoinUs />
     </div>
   );
 }

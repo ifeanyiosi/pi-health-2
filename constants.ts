@@ -86,7 +86,7 @@ export const productsAndSolutions = [
 
 export const heroLinks = [
   {
-    image: "/doc-call.jpg",
+    image: "/video-call.jpg",
     heading: "monitor patients with pi-sense",
     btnText: "learn more",
   },

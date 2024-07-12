@@ -19,14 +19,18 @@ const config = {
     },
     extend: {
       colors: {
+        text: "rgb(252, 250, 238)",
+        dark: "rgb(25, 24, 23)",
+        grey: "rgb(85, 85, 85)",
+        cream: "rgb(250, 250, 250)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#009fdf",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "rgb(255, 195, 86)",
+          foreground: "rgb(255, 195, 86)",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",

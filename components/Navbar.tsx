@@ -36,7 +36,7 @@ export default function Navbar() {
           <div className="hidden xl:flex gap-8 ">
             {menuLinks.map((item) => (
               <Link
-                className="text-[rgba(32,41,47,.6)] uppercase hover:text-[#000] hover:font-bold "
+                className="text-[rgba(32,41,47,.6)] capitalize hover:text-[#000] font-bold hover:underline "
                 key={item.name}
                 href={item.href}
                 passHref
