@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { MoveRight } from "lucide-react";
 
 export default function HeroPage() {
   return (
@@ -22,10 +23,13 @@ export default function HeroPage() {
             Experience the Future of Health Monitoring with Pi-Sense Wearables.
           </p>
 
-          <Button className="rounded-[24px] font-bold w-[200px] mt-[24px] flex items-center py-[10px] px-8 ">
-            {" "}
+          <Link
+            href=""
+            className="mt-6 w-fit  text-white relative flex items-center gap-2 border-b-2 border-transparent hover:border-transparent transition-all duration-300 before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-300 hover:before:w-full text-base sm:text-lg md:text-xl "
+          >
             Discover more
-          </Button>
+            <MoveRight />
+          </Link>
         </div>
         <div className="w-full lg:w-[40%]  relative flex flex-col py-10 px-9  justify-end">
           <Image
@@ -42,10 +46,13 @@ export default function HeroPage() {
             Groundbreaking AI Technology for Superior Diabetes Management.
           </p>
 
-          <Button className="rounded-[24px] font-bold w-[200px] mt-[24px] flex items-center py-[10px] px-8 ">
-            {" "}
+          <Link
+            href=""
+            className="mt-6 w-fit  text-white relative flex items-center gap-2 border-b-2 border-transparent hover:border-transparent transition-all duration-300 before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-300 hover:before:w-full text-base sm:text-lg md:text-xl "
+          >
             Discover more
-          </Button>
+            <MoveRight />
+          </Link>
         </div>
       </div>
 
@@ -77,10 +84,13 @@ export default function HeroPage() {
             <p className="text-[16px] leading-[30px] text-black lg:text-text md:text-[18px] mt-4">
               Pi-Sense Technology Trusted by Astronauts
             </p>{" "}
-            <Button className="rounded-[24px] font-bold w-[200px] mt-[24px] flex items-center py-[10px] px-8 ">
-              {" "}
+            <Link
+              href=""
+              className="mt-6 w-fit  text-white relative flex items-center gap-2 border-b-2 border-transparent hover:border-transparent transition-all duration-300 before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-300 hover:before:w-full text-base sm:text-lg md:text-xl "
+            >
               Discover more
-            </Button>
+              <MoveRight />
+            </Link>
           </div>
         </div>
       </div>
@@ -100,10 +110,13 @@ export default function HeroPage() {
             Advanced Clinician Interface for Better Patient Outcomes
           </p>
 
-          <Button className="rounded-[24px] font-bold w-[200px] mt-[24px] flex items-center py-[10px] px-8 ">
-            {" "}
+          <Link
+            href=""
+            className="mt-6 w-fit  text-white relative flex items-center gap-2 border-b-2 border-transparent hover:border-transparent transition-all duration-300 before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-300 hover:before:w-full text-base sm:text-lg md:text-xl "
+          >
             Discover more
-          </Button>
+            <MoveRight />
+          </Link>
         </div>
 
         <div className="w-full lg:w-[60%]   relative flex flex-col py-10 px-9  justify-end">
@@ -121,13 +134,15 @@ export default function HeroPage() {
             Monitor, Track, and Improve Your Well-being with Pi-Sense Wearables
           </p>
 
-          <Button className="rounded-[24px] font-bold w-[200px] mt-[24px] flex items-center py-[10px] px-8 ">
-            {" "}
+          <Link
+            href=""
+            className="mt-6 w-fit  text-white relative flex items-center gap-2 border-b-2 border-transparent hover:border-transparent transition-all duration-300 before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-300 hover:before:w-full text-base sm:text-lg md:text-xl "
+          >
             Discover more
-          </Button>
+            <MoveRight />
+          </Link>
         </div>
       </div>
-      
     </div>
   );
 }

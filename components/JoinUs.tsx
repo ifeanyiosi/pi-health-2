@@ -55,7 +55,7 @@ export default function JoinUs() {
 
   return (
     <div className="bg-[rgb(25,24,23)] flex  w-full min-h-[500px] px-4 md:px-8 lg:px-16 2xl:px-64">
-      <div className="   my-[30px] lg:my-[60px] flex flex-col lg:flex-row  w-full  ">
+      <div className="   my-[30px] lg:my-[60px] rounded-md flex flex-col lg:flex-row  w-full  ">
         <div className="w-full hidden md:flex h-[700px] relative  ">
           <Image
             priority
@@ -65,7 +65,7 @@ export default function JoinUs() {
             alt="background image"
           />
         </div>
-        <div className="w-full flex px-5 md:px-10 py-[30px] flex-col items-start justify-start lg:px-10 bg-[#fff]">
+        <div className="w-full flex px-5 md:px-10 py-[30px] flex-col  items-start justify-start lg:px-10 bg-[#fff]">
           <h3 className="text-[0.875rem] uppercase mb-2 text-dark">
             Pi-Health
           </h3>
@@ -85,7 +85,7 @@ export default function JoinUs() {
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
-                className="space-y-8"
+                className="space-y-4"
               >
                 <FormField
                   control={form.control}
@@ -105,46 +105,43 @@ export default function JoinUs() {
                     </FormItem>
                   )}
                 />
+                <FormField
+                  control={form.control}
+                  name="firstName"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormControl>
+                        <Input
+                          className="w-full"
+                          type="text"
+                          placeholder="First name"
+                          {...field}
+                        />
+                      </FormControl>
 
-                <div className="flex flex-col lg:max-w-[500px] justify-between  w-full md:flex-row gap-4">
-                  <FormField
-                    control={form.control}
-                    name="firstName"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormControl>
-                          <Input
-                            className="w-full input-field"
-                            type="text"
-                            placeholder="First name"
-                            {...field}
-                          />
-                        </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
 
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+                <FormField
+                  control={form.control}
+                  name="lastName"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormControl>
+                        <Input
+                          className="w-full"
+                          type="text"
+                          placeholder="Last name"
+                          {...field}
+                        />
+                      </FormControl>
 
-                  <FormField
-                    control={form.control}
-                    name="lastName"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormControl>
-                          <Input
-                            className="w-full input-field"
-                            type="text"
-                            placeholder="Last name"
-                            {...field}
-                          />
-                        </FormControl>
-
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                </div>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
 
                 <p className="text-[0.75rem] lg:max-w-[500px] text-grey">
                   I accept that Pi-sense can contact me via digital

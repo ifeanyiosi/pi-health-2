@@ -6,7 +6,7 @@ import { FaHeartbeat } from "react-icons/fa";
 export const menuLinks = [
   {
     name: "About",
-    href: "/list",
+    href: "/about-us",
   },
   {
     name: "Products",

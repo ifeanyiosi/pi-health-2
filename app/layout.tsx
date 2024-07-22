@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={mont.className}>
         <Navbar />
-        {children}
+        <div className="w-full min-h-screen"> {children}</div>
         <Footer />
       </body>
     </html>
