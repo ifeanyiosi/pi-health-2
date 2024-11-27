@@ -1,8 +1,11 @@
-
+import DownloadSection from "@/components/DownloadSection";
 import HeroPage from "@/components/HeroPage";
 import JoinUs from "@/components/JoinUs";
+import ProductList from "@/components/ProductList";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import VideoIntro from "@/components/VideoIntro";
+import WomenVideo from "@/components/WomenVideo";
 import { heroLinks, productsAndSolutions, whatCustomersDo } from "@/constants";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
@@ -11,7 +14,11 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <HeroPage />
+      <VideoIntro />
+
+      <ProductList />
+
+      <WomenVideo />
 
       <div className="w-full flex flex-col py-[100px] items-center justify-center text-[#212529] ">
         <h1 className="text-[18px] text-center md:text-[32px] font-bold">
@@ -24,8 +31,11 @@ export default function Home() {
           Read more on the blog <ArrowRight />{" "}
         </Link>
       </div>
+      <HeroPage />
 
-      <section className="w-full h-full px-4 md:px-8 lg:px-16 2xl:px-64 flex flex-col gap-8">
+      <DownloadSection />
+
+      <section className="w-full mt-5 h-full px-4 md:px-8 lg:px-16 2xl:px-64 flex flex-col gap-8">
         <div className="flex flex-col lg:flex-row w-full ">
           <div className="relative h-[400px] lg:h-[300px] w-full ">
             <Image
@@ -115,8 +125,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-
-
 
       <JoinUs />
     </div>

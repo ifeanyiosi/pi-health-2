@@ -10,23 +10,15 @@ export const menuLinks = [
   },
   {
     name: "Products",
-    href: "/list",
+    href: "/products",
   },
   {
-    name: "Clinicians",
-    href: "/list",
+    name: "Shareholders",
+    href: "/shareholders",
   },
   {
-    name: "Resources",
-    href: "/list",
-  },
-  {
-    name: "Support",
-    href: "/list",
-  },
-  {
-    name: "Community",
-    href: "/list",
+    name: "Contact",
+    href: "/contact",
   },
 ];
 
@@ -114,5 +106,84 @@ export const heroLinks = [
     image: "/astro.jpg",
     heading: "Pioneering Health in Space",
     btnText: "learn more",
+  },
+];
+
+export const products = [
+  {
+    id: "1",
+    name: "Apex Pro Smartwatch",
+    category: "Smartwatch",
+    image: "/products/smart-watch-1.png",
+    price: 199.99,
+    features: ["Heart Rate Monitor", "GPS Tracking", "Bluetooth Connectivity"],
+  },
+  {
+    id: "2",
+    name: "LuxeFit Smart Ring",
+    category: "Ring",
+    image: "/products/smart-ring-1.webp",
+    price: 149.99,
+    features: ["Sleep Tracking", "Water-Resistant", "Fitness Insights"],
+  },
+  {
+    id: "3",
+    name: "PulseMax Fitness Watch",
+    category: "Smartwatch",
+    image: "/products/smart-watch-3.jpg",
+    price: 179.99,
+    features: ["Step Counter", "Calorie Tracker", "Waterproof"],
+  },
+];
+
+export const productsPage = [
+  {
+    id: "1",
+    name: "Apex Pro Smartwatch",
+    category: "Smartwatch",
+    image: "/products/bg-ring.jpg",
+    price: 199.99,
+    features: ["Heart Rate Monitor", "GPS Tracking", "Bluetooth Connectivity"],
+  },
+  {
+    id: "2",
+    name: "LuxeFit Smart Ring",
+    category: "Ring",
+    image: "/products/bg-watch.jpg",
+    price: 149.99,
+    features: ["Sleep Tracking", "Water-Resistant", "Fitness Insights"],
+  },
+  {
+    id: "3",
+    name: "PulseMax Fitness Watch",
+    category: "Smartwatch",
+    image: "/products/smart-watch-1.jpg",
+    price: 179.99,
+    features: ["Step Counter", "Calorie Tracker", "Waterproof"],
+  },
+  {
+    id: "4",
+    name: "PulseMax Fitness Watch",
+    category: "Smartwatch",
+    image: "/products/smart-watch-3.jpg",
+    price: 179.99,
+    features: ["Step Counter", "Calorie Tracker", "Waterproof"],
+  },
+  {
+    id: "3",
+    name: "PulseMax Fitness Watch",
+    category: "Smartwatch",
+    image: "/products/smart-belt-1.jpg",
+    price: 179.99,
+    features: ["Step Counter", "Calorie Tracker", "Waterproof"],
+  },
+
+  {
+    id: "3",
+    name: "PulseMax Fitness Watch",
+    category: "Smartwatch",
+    image: "/products/heart-rate-monitor.jpg",
+    price: 179.99,
+    features: ["Step Counter", "Calorie Tracker", "Waterproof"],
   },
 ];

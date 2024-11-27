@@ -7,8 +7,8 @@ import { menuLinks } from "@/constants";
 export default function MobileMenu() {
   return (
     <Sheet>
-      <SheetTrigger asChild>
-        <Menu />
+      <SheetTrigger className="text-[#fff]" asChild>
+        <Menu className="text-[#fff]" />
       </SheetTrigger>
       <SheetContent className=" w-full ">
         <div className="flex flex-col items-center text-xl justify-center  pt-5 pb-7  gap-8">

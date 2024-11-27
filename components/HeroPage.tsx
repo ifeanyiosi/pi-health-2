@@ -7,7 +7,7 @@ import { MoveRight } from "lucide-react";
 export default function HeroPage() {
   return (
     <div className="flex flex-col gap-4">
-      <div className="w-full flex flex-col md:flex-row gap-4 lg:min-h-[650px]">
+      {/* <div className="w-full flex flex-col md:flex-row gap-4 lg:min-h-[650px]">
         <div className="w-full lg:w-[60%]  relative flex flex-col py-10 px-9  justify-end gap-4">
           <Image
             priority
@@ -54,11 +54,11 @@ export default function HeroPage() {
             <MoveRight />
           </Link>
         </div>
-      </div>
+      </div> */}
 
-      <div className="flex relative  w-full  flex-col items-center justify-center  py-4 ">
+      <div className="flex relative  w-full  flex-col items-center justify-center  ">
         <video
-          className="  hidden lg:flex w-[80%] h-[500px] object-cover"
+          className="  hidden lg:flex w-full h-[500px] object-cover"
           autoPlay
           muted
           loop
@@ -82,7 +82,7 @@ export default function HeroPage() {
               Innovating Beyond Earth
             </h1>
             <p className="text-[16px] leading-[30px] text-black lg:text-text md:text-[18px] mt-4">
-              Pi-Sense Technology Trusted by Astronauts
+              Pi-Health Technology Trusted by Astronauts
             </p>{" "}
             <Link
               href=""
@@ -94,7 +94,7 @@ export default function HeroPage() {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col lg:flex-row gap-4 lg:min-h-[500px]">
+      {/* <div className="w-full flex flex-col lg:flex-row gap-4 lg:min-h-[500px]">
         <div className="w-full lg:w-[40%]  relative flex flex-col py-10 px-9  justify-end">
           <Image
             priority
@@ -142,7 +142,7 @@ export default function HeroPage() {
             <MoveRight />
           </Link>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
