@@ -94,7 +94,7 @@ export default function ContactUs() {
 
             <Button
               type="submit"
-              className="w-full"
+              className="w-full text-white"
             >
               Send Message
             </Button>

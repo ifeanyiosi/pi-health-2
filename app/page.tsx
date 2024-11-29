@@ -1,6 +1,9 @@
 import DownloadSection from "@/components/DownloadSection";
+import HeroIntro from "@/components/HeroIntro";
 import HeroPage from "@/components/HeroPage";
+import HowItWorks from "@/components/HowItWorks";
 import JoinUs from "@/components/JoinUs";
+import Partners from "@/components/Partners";
 import ProductList from "@/components/ProductList";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -14,11 +17,13 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <VideoIntro />
+      <HeroIntro />
+      <WomenVideo />
+      {/* <VideoIntro /> */}
+
+      <HowItWorks />
 
       <ProductList />
-
-      <WomenVideo />
 
       <div className="w-full flex flex-col py-[100px] items-center justify-center text-[#212529] ">
         <h1 className="text-[18px] text-center md:text-[32px] font-bold">
@@ -33,9 +38,11 @@ export default function Home() {
       </div>
       <HeroPage />
 
+      <Partners />
+
       <DownloadSection />
 
-      <section className="w-full mt-5 h-full px-4 md:px-8 lg:px-16 2xl:px-64 flex flex-col gap-8">
+      <section className="w-full mt-5 h-full px-4 md:px-8 lg:px-16 2xl:px-64 flex flex-col gap-8 py-5">
         <div className="flex flex-col lg:flex-row w-full ">
           <div className="relative h-[400px] lg:h-[300px] w-full ">
             <Image
@@ -78,7 +85,7 @@ export default function Home() {
 
           <div className="w-full lg:px-8 text-[#212529] mt-4 lg:mt-0 flex flex-col items-start justify-center">
             <h1 className="text-[28px] l lg:text-[32px]  font-bold">
-              Real stories from real people
+              The Secret behind Pi-Health
             </h1>
             <p className="leading-relaxed tracking-wide mt-4">
               At PI Health, we drive innovation through cutting-edge Research
@@ -97,34 +104,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <div className="flex flex-col lg:flex-row my-4 lg:my-8 items-center justify-between px-4 md:px-8 lg:px-16 2xl:px-64">
-        <div className="relative h-[500px] lg:h-[600px] w-full ">
-          {" "}
-          <Image
-            fill
-            className="flex object-cover"
-            src="/diverse-doctors.jpg"
-            alt=""
-          />
-        </div>
-        <div className="px-4 lg:px-16 w-full py-10 lg:py-0 flex flex-col ">
-          <h2 className="text-[20px] md:text-[1.75rem] font-bold ">
-            Our Mission and Vision
-          </h2>
-
-          <p className="text-[1.25rem] lg:mt-8 mt-4 leading-relaxed ">
-            Our vision is to be a global leader in health technology, known for
-            our dedication to improving lives through innovation and excellence.
-            We aspire to create a future where wearable health devices
-            seamlessly integrate into daily life, offering invaluable insights
-            that promote proactive health management. By continually advancing
-            our products and services, we aim to set new standards in health
-            monitoring and data integration, ultimately transforming the way
-            people and healthcare providers approach health and wellness.
-          </p>
-        </div>
-      </div>
 
       <JoinUs />
     </div>

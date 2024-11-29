@@ -13,7 +13,7 @@ export default function AboutUs() {
 
         <div className="w-full  text-[#212529] flex flex-col py-8 mt-4 md:mt-8 items-start justify-center px-4 md:px-8 lg:px-16 2xl:px-64">
           <h1 className="text-[28px] l lg:text-[32px]  font-bold">
-            Predictive Healthcare for a Healthier Tomorrow
+            Enabling real-time, remote healthcare for a Healthier tomorrow
           </h1>
           <p className="leading-relaxed tracking-wide mt-4">
             Pi-Health is a suite of wearable technology that uses
@@ -35,7 +35,7 @@ export default function AboutUs() {
 
       <section className="px-4 md:px-8 lg:px-16 2xl:px-64 py-5 ">
         <h1 className="text-[28px] l lg:text-[32px]  font-bold">
-          Why choose us?
+          Why us?
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4 md:px-8 py-12">
           {/* Box 1 */}

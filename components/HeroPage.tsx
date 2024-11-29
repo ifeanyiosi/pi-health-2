@@ -56,7 +56,7 @@ export default function HeroPage() {
         </div>
       </div> */}
 
-      <div className="flex relative  w-full  flex-col items-center justify-center  ">
+      {/* <div className="flex relative  w-full  flex-col items-center justify-center  ">
         <video
           className="  hidden lg:flex w-full h-[500px] object-cover"
           autoPlay
@@ -93,7 +93,7 @@ export default function HeroPage() {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* <div className="w-full flex flex-col lg:flex-row gap-4 lg:min-h-[500px]">
         <div className="w-full lg:w-[40%]  relative flex flex-col py-10 px-9  justify-end">
           <Image

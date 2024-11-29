@@ -156,7 +156,7 @@ export default function JoinUs() {
                   Policy and Terms of Service apply.
                 </p>
                 <Button
-                  className="rounded-[24px] w-full lg:w-auto mt-5 min-w-[140px] py-4 px-8 "
+                  className="rounded-[24px] text-white w-full lg:w-auto mt-5 min-w-[140px] py-4 px-8 "
                   type="submit"
                 >
                   Subscribe

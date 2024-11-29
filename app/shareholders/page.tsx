@@ -18,7 +18,7 @@ export default function Page() {
             empower clinicians, carers, and family members to make faster,
             smarter decisions for better patient outcomes.
           </p>
-          <Button>Get started</Button>
+          <Button className="text-white">Get started</Button>
         </div>
         {/* Hero Image */}
         <div className="w-full md:w-1/2 relative mt-8 md:mt-0 h-[300px] md:h-[900px]">

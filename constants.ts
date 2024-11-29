@@ -13,7 +13,7 @@ export const menuLinks = [
     href: "/products",
   },
   {
-    name: "Shareholders",
+    name: "Stakeholders",
     href: "/shareholders",
   },
   {
@@ -112,34 +112,88 @@ export const heroLinks = [
 export const products = [
   {
     id: "1",
-    name: "Apex Pro Smartwatch",
+    name: "Smart Watch",
     category: "Smartwatch",
     image: "/products/smart-watch-1.png",
     price: 199.99,
-    features: ["Heart Rate Monitor", "GPS Tracking", "Bluetooth Connectivity"],
+    features: [
+      "ECG Monitoring for Cardiac Health",
+      "Blood Oxygen Saturation (SpO2) Tracking",
+      "Heart Rate & Respiratory Rate Monitoring",
+      "Activity & Sleep Monitoring",
+      "Skin Temperature Measurement",
+    ],
+    condition: "Arrhythmia",
   },
   {
     id: "2",
-    name: "LuxeFit Smart Ring",
+    name: "Blood Sugar Smart Ring",
     category: "Ring",
     image: "/products/smart-ring-1.webp",
     price: 149.99,
-    features: ["Sleep Tracking", "Water-Resistant", "Fitness Insights"],
+    features: [
+      "Non-invasive Blood Glucose Monitoring",
+      "Real-time Glucose Levels & Trends",
+      "Heart Rate & HRV Tracking",
+      "Blood Oxygen Saturation (SpO2)",
+      "Skin Temperature Monitoring",
+      "Activity & Sleep Tracking",
+    ],
+    condition: "Diabetes Management",
   },
   {
     id: "3",
-    name: "PulseMax Fitness Watch",
-    category: "Smartwatch",
-    image: "/products/smart-watch-3.jpg",
+    name: "Atrial Fibrillation belt",
+    category: "Belt",
+    image: "/products/heart-rate-monitor.jpg",
     price: 179.99,
-    features: ["Step Counter", "Calorie Tracker", "Waterproof"],
+    features: [
+      "ECG Monitoring for Atrial Fibrillation Detection",
+      "Heart Rate Variability (HRV) Analysis",
+      "Real-Time Arrhythmia Alerts",
+      "Activity & Sleep Tracking",
+      "Skin Temperature Monitoring",
+    ],
+    condition: "Abnormal Heart Rate",
+  },
+  {
+    id: "4",
+    name: "Pi-sense Fitness Watch",
+    category: "Smartwatch",
+    image: "/products/smart-belt-1.jpg",
+    price: 179.99,
+    features: [
+      "Heart Rate (HR) Monitoring via PPG Sensors",
+      "Heart Rate Variability (HRV) Analysis",
+      "ECG for Arrhythmia Detection",
+      "Blood Oxygen Saturation (SpO2)",
+      "Respiratory Rate Monitoring",
+      "Blood Pressure Estimation",
+      "Activity & Sleep Tracking",
+    ],
+    condition: "Sleep Apnea",
+  },
+  {
+    id: "5",
+    name: "ECG - Patch",
+    category: "ECG",
+    image: "/images/ecg.jpg",
+    price: 179.99,
+    features: [
+      "Heart Rate & HRV via ECG & PPG Sensors",
+      "Respiratory Rate Monitoring with Accelerometers & PPG",
+      "Body Temperature Monitoring",
+      "Activity Level Tracking (Steps & Intensity)",
+      "Posture & Position Detection (Fall Detection)",
+    ],
+    condition: "Outdoor Activities",
   },
 ];
 
 export const productsPage = [
   {
     id: "1",
-    name: "Apex Pro Smartwatch",
+    name: "Pi-sense Smart Ring",
     category: "Smartwatch",
     image: "/products/bg-ring.jpg",
     price: 199.99,
@@ -147,7 +201,7 @@ export const productsPage = [
   },
   {
     id: "2",
-    name: "LuxeFit Smart Ring",
+    name: "Pi-sense Smart Watch",
     category: "Ring",
     image: "/products/bg-watch.jpg",
     price: 149.99,
@@ -155,7 +209,7 @@ export const productsPage = [
   },
   {
     id: "3",
-    name: "PulseMax Fitness Watch",
+    name: "Pi-sense Fitness Watch",
     category: "Smartwatch",
     image: "/products/smart-watch-1.jpg",
     price: 179.99,
@@ -163,7 +217,7 @@ export const productsPage = [
   },
   {
     id: "4",
-    name: "PulseMax Fitness Watch",
+    name: "Pi-sense Fitness Watch",
     category: "Smartwatch",
     image: "/products/smart-watch-3.jpg",
     price: 179.99,
@@ -171,7 +225,7 @@ export const productsPage = [
   },
   {
     id: "3",
-    name: "PulseMax Fitness Watch",
+    name: "Pi-sense Fitness Watch",
     category: "Smartwatch",
     image: "/products/smart-belt-1.jpg",
     price: 179.99,
@@ -180,7 +234,7 @@ export const productsPage = [
 
   {
     id: "3",
-    name: "PulseMax Fitness Watch",
+    name: "Pi-sense Heart rate Monitor",
     category: "Smartwatch",
     image: "/products/heart-rate-monitor.jpg",
     price: 179.99,
