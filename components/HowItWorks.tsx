@@ -54,22 +54,6 @@ export default function HowItWorks() {
                       interface that guides users through symptom tracking and
                       health data logging with minimal effort.
                     </p>
-                    <p className="text-lg text-gray-600 leading-relaxed tracking-wide mb-6">
-                      Clinicians can access real-time data from patients,
-                      allowing for early detection of critical health issues and
-                      enabling remote consultations. Two-way communication
-                      through in-app messaging or video calls ensures patients
-                      receive timely medical advice and personalized care plans.
-                    </p>
-                    <p className="text-lg text-gray-600 leading-relaxed tracking-wide">
-                      With AI-driven insights, the mobile application offers
-                      users actionable health tips based on their symptoms and
-                      health history. Patients can also receive medication
-                      reminders, appointment alerts, and educational resources
-                      tailored to their specific health conditions, empowering
-                      them to take control of their well-being anytime,
-                      anywhere.
-                    </p>
                   </div>
                 </div>
 
@@ -112,24 +96,6 @@ export default function HowItWorks() {
                       personalized insights for each patient, allowing targeted
                       interventions that improve outcomes and reduce hospital
                       readmissions.
-                    </p>
-
-                    <p className="text-lg text-gray-600 leading-relaxed tracking-wide mb-6">
-                      The interface facilitates secure communication between
-                      healthcare providers and patients, ensuring that critical
-                      updates are delivered promptly. Customizable alerts and
-                      notifications keep clinicians informed about threshold
-                      breaches, helping them make timely clinical decisions and
-                      prioritize care effectively.
-                    </p>
-
-                    <p className="text-lg text-gray-600 leading-relaxed tracking-wide mb-6">
-                      Seamless integration with telemedicine platforms allows
-                      physicians to conduct virtual consultations, reducing the
-                      need for in-person visits and making healthcare more
-                      accessible to patients in remote areas. Additionally,
-                      automated workflows streamline administrative tasks,
-                      giving clinicians more time to focus on patient care.
                     </p>
                   </div>
                 </div>

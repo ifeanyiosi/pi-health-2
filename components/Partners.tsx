@@ -16,8 +16,8 @@ export default function Partners() {
 
       <div className="bg-black  flex items-center justify-center">
         <img
-          className="h-[100px] flex items-center justify-center"
-          src="/images/cosens-logo.png"
+          className="h-[300px] w-[300px] flex items-center justify-center"
+          src="/images/cosens-logo.jpg"
           alt=""
         />
       </div>

@@ -6,21 +6,20 @@ const LearnMoreSection = () => {
   const [showDetails, setShowDetails] = useState(false);
 
   return (
-    <section className="flex flex-col md:flex-row items-center gap-8 py-12 px-6 bg-gray-900">
+    <section className="flex flex-col md:flex-row items-center gap-8 py-16 px-8 bg-gray-900">
       {/* Text Section */}
       <div className="w-full lg:ml-[80px] md:w-1/2 ml-auto">
-        <h2 className="text-3xl font-bold text-gray-200">
-          Experience the Future of Health Monitoring
+        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-200 leading-tight">
+          Meili II: How Pi-health is Revolutionizing Space Health.
         </h2>
-        <p className="mt-4 text-gray-400">
-          Our Pi-Health products are designed to support astronauts during space
-          missions, ensuring continuous health monitoring in extreme
-          environments.
+        <p className="mt-6 text-lg md:text-xl text-gray-400 leading-relaxed">
+          Our products are designed to support astronauts during space missions,
+          ensuring continuous health monitoring in extreme environments.
         </p>
 
         {/* Learn More Button */}
         <button
-          className="mt-6 px-4 py-2 bg-[#345334] text-white rounded-md hover:bg-[#1e2e1e] transition"
+          className="mt-8 px-6 py-3 bg-[#345334] text-lg text-white rounded-md hover:bg-[#1e2e1e] transition"
           onClick={() => setShowDetails(!showDetails)}
         >
           {showDetails ? "Show Less" : "Learn More"}
@@ -28,7 +27,7 @@ const LearnMoreSection = () => {
 
         {/* Collapsible Details Section */}
         {showDetails && (
-          <div className="mt-4 text-gray-300">
+          <div className="mt-6 text-lg text-gray-300 leading-relaxed">
             <p>
               During the Meili II mission, Pi-Health products will track vital
               health data, providing critical insights to medical teams on
@@ -36,7 +35,7 @@ const LearnMoreSection = () => {
               tailored for use in remote environments, simulating the conditions
               of space exploration.
             </p>
-            <ul className="mt-2 list-disc list-inside">
+            <ul className="mt-4 list-disc list-inside">
               <li>Continuous vital signs monitoring</li>
               <li>Data visualization for medical teams</li>
               <li>Built for extreme environments</li>

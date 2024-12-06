@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 export default function Wearables() {
   return (
@@ -34,16 +34,6 @@ export default function Wearables() {
               Users can also receive instant alerts for critical health events,
               enabling timely intervention and reducing the risk of
               complications.
-            </p>
-
-            <p className="mt-4 text-gray-600 leading-relaxed">
-              By promoting proactive health management, the wearable system
-              encourages users to stay active, travel, and engage in their daily
-              routines while remaining connected to their healthcare team. With
-              data-driven insights and tailored feedback, users can make
-              informed decisions about their lifestyle, diet, and exercise,
-              ensuring optimal health outcomes even in the comfort of their own
-              homes.
             </p>
           </div>
         </div>
