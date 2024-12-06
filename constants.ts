@@ -154,7 +154,7 @@ export const products = [
       "Activity & Sleep Tracking",
       "Skin Temperature Monitoring",
     ],
-    condition: "Fatigue",
+    condition: "Heart disease",
   },
   {
     id: "4",
