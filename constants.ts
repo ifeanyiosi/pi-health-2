@@ -154,7 +154,7 @@ export const products = [
       "Activity & Sleep Tracking",
       "Skin Temperature Monitoring",
     ],
-    condition: "Abnormal Heart Rate",
+    condition: "Fatigue",
   },
   {
     id: "4",
@@ -186,7 +186,7 @@ export const products = [
       "Activity Level Tracking (Steps & Intensity)",
       "Posture & Position Detection (Fall Detection)",
     ],
-    condition: "Outdoor Activities",
+    condition: "Abnormal Heart Rate",
   },
 ];
 
