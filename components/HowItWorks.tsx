@@ -6,7 +6,7 @@ export default function HowItWorks() {
   return (
     <section
       id="how"
-      className="px-4 py-12 w-fit mx-auto flex flex-col items-center bg-[#F6F6F6] justify-center "
+      className="px-4 py-12 w-full mx-auto flex flex-col items-center bg-[#F6F6F6] justify-center "
     >
       <div className=" mx-auto flex flex-col items-center justify-center">
         <h1 className="text-3xl md:text-4xl text-center font-bold mb-8 text-gray-800">
@@ -18,8 +18,8 @@ export default function HowItWorks() {
           className="w-fit flex flex-col bg-[#F6F6F6] items-center justify-center"
         >
           {/* Tab Navigation */}
-          <TabsList className="flex w-fit bg-white justify-center ">
-            <TabsTrigger value="wearables" className="mx-2 bg-white">
+          <TabsList className="flex flex-col md:flex-row py-5 mb-6 w-full bg-white justify-center ">
+            <TabsTrigger value="wearables" className="mx-2  bg-white">
               Wearables
             </TabsTrigger>
             <TabsTrigger value="mobile-application" className="mx-2">

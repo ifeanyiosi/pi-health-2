@@ -12,7 +12,7 @@ const LearnMoreSection = () => {
     >
       {/* Text Section */}
       <div className="w-full lg:ml-[80px] md:w-1/2 ml-auto">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-200 leading-tight">
+        <h2 className="text-2xl md:text-5xl font-extrabold text-gray-200 leading-tight">
           Meili II: How Pi-health is Revolutionizing Space Health.
         </h2>
         <p className="mt-6 text-lg md:text-xl text-gray-400 leading-relaxed">
