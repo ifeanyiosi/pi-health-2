@@ -6,7 +6,10 @@ const LearnMoreSection = () => {
   const [showDetails, setShowDetails] = useState(false);
 
   return (
-    <section className="flex flex-col md:flex-row items-center gap-8 py-16 px-8 bg-gray-900">
+    <section
+      id="space"
+      className="flex flex-col md:flex-row items-center gap-8 py-16 px-8 bg-gray-900"
+    >
       {/* Text Section */}
       <div className="w-full lg:ml-[80px] md:w-1/2 ml-auto">
         <h2 className="text-4xl md:text-5xl font-extrabold text-gray-200 leading-tight">

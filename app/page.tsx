@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import DownloadSection from "@/components/DownloadSection";
 import HeroIntro from "@/components/HeroIntro";
 import HeroPage from "@/components/HeroPage";
@@ -32,7 +33,7 @@ export default function Home() {
             <div className="flex flex-col items-center md:items-start">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-[300] leading-tight text-white">
                 Ailment-Specific Wearables, Mobile Application, and
-                Clinicians&apos; Interface Backed by AI.
+                Clinician&apos;s Interface Backed by AI.
               </h1>
               <p className="text-base md:text-lg lg:text-xl text-white mt-4">
                 At Pi-Health, we are transforming healthcare for individuals
@@ -91,7 +92,10 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="px-4 md:px-8 flex items-center justify-center flex-col py-5 w-full ">
+        <Link
+          href={"/about-us"}
+          className="px-4 md:px-8 flex items-center justify-center flex-col py-5 w-full "
+        >
           <h1 className="text-3xl md:text-4xl lg:text-5xl  font-bold">
             Why us?
           </h1>
@@ -128,7 +132,7 @@ export default function Home() {
               </h3>
             </div>
           </div>
-        </section>
+        </Link>
       </div>
 
       <WomenVideo />

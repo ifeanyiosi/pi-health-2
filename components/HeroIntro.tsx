@@ -8,7 +8,10 @@ export default function HeroIntro() {
     <section className="w-full min-h-screen flex flex-col lg:flex-row ">
       {/* Right Section */}
       <div className="w-full  grid  lg:grid-cols-2">
-        <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] flex flex-col justify-end py-8 px-6">
+        <Link
+          href={"/products"}
+          className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] flex flex-col justify-end py-8 px-6"
+        >
           <Image
             priority
             fill
@@ -16,15 +19,18 @@ export default function HeroIntro() {
             src="/watch.jpg"
             alt="Transform Your Health Journey"
           />
-          <h1 className="text-4xl   text-white font-bold">
+          <h1 className="lg:text-4xl text-2xl  text-white font-bold">
             Monitor, Track, Respond
           </h1>
           <p className="text-white text-xs md:text-sm lg:text-base">
             Experience Remote Monitoring for Long term conditions with a
             difference.
           </p>
-        </div>
-        <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] flex flex-col justify-end py-8 px-6">
+        </Link>
+        <Link
+          href={"#how"}
+          className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] flex flex-col justify-end py-8 px-6"
+        >
           <Image
             priority
             fill
@@ -32,16 +38,19 @@ export default function HeroIntro() {
             src="/interface-one.jpg"
             alt="Empowering Healthcare Professionals"
           />
-          <h1 className="text-2xl lg:text-4xl text-white font-semibold">
+          <h1 className="text-2xl lg:text-4xl text-white font-bold">
             Next-Generation Clinician Interface
           </h1>
           <p className="text-white text-xs md:text-sm lg:text-base">
             Advanced Clinician Interface for Better Patient Outcomes.
           </p>
-        </div>
+        </Link>
         {/* First Image Section */}
 
-        <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] flex flex-col justify-end py-8 px-6 rounded-lg">
+        <Link
+          href={"#space"}
+          className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] flex flex-col justify-end py-8 px-6 rounded-lg"
+        >
           <Image
             priority
             fill
@@ -49,15 +58,18 @@ export default function HeroIntro() {
             src="/images/astro.jpg"
             alt="Empowering Women's Health"
           />
-          <h1 className="text-2xl  lg:text-4xl text-white font-semibold">
+          <h1 className="text-2xl  lg:text-4xl text-white font-bold">
             Out of Earth, In Space
           </h1>
           <p className="text-white text-xs md:text-sm lg:text-base">
             Explore our missions out of earth.
           </p>
-        </div>
+        </Link>
 
-        <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] flex flex-col justify-end py-8 px-6 rounded-lg">
+        <Link
+          href={"/products"}
+          className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] flex flex-col justify-end py-8 px-6 rounded-lg"
+        >
           <Image
             priority
             fill
@@ -65,16 +77,19 @@ export default function HeroIntro() {
             src="/images/woman-1.jpg"
             alt="Empowering Women's Health"
           />
-          <h1 className="text-2xl lg:text-4xl  text-white font-semibold">
+          <h1 className="text-2xl lg:text-4xl  text-white font-bold">
             Healthcare for women
           </h1>
           <p className="text-white text-xs md:text-sm lg:text-base">
             Monitor, Track, and Improve Your Well-being with Pi-Sense Wearables.
           </p>
-        </div>
+        </Link>
 
         {/* Second Image Section */}
-        <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] flex flex-col justify-end py-8 px-6">
+        <Link
+          href={"about-us"}
+          className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] flex flex-col justify-end py-8 px-6"
+        >
           <Image
             priority
             fill
@@ -82,19 +97,22 @@ export default function HeroIntro() {
             src="/products/bg-ring.jpg"
             alt="Revolutionize Diabetes Care"
           />
-          <h1 className="text-2xl lg:text-4xl  text-white font-semibold">
+          <h1 className="text-2xl lg:text-4xl  text-white font-bold">
             Revolutionize Diabetes Care
           </h1>
           <p className="text-white text-xs md:text-sm lg:text-base">
             Groundbreaking AI Technology for Superior Diabetes Management.
           </p>
-        </div>
+        </Link>
 
         {/* Third Image Section */}
 
         {/* Fourth Image Section */}
 
-        <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] flex flex-col justify-end py-8 px-6 rounded-lg">
+        <Link
+          href={"/products"}
+          className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] flex flex-col justify-end py-8 px-6 rounded-lg"
+        >
           <Image
             priority
             fill
@@ -102,13 +120,13 @@ export default function HeroIntro() {
             src="/images/ecg.jpg"
             alt="Empowering Women's Health"
           />
-          <h1 className="text-2xl lg:text-4xl  text-white font-semibold">
+          <h1 className="text-2xl lg:text-4xl  text-white font-bold">
             Health Monitoring: Anytime, Anywhere
           </h1>
           <p className="text-white text-xs md:text-sm lg:text-base">
             Heart rate, activity, sleep, and more—designed for your well-being.
           </p>
-        </div>
+        </Link>
       </div>
     </section>
   );

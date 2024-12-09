@@ -4,7 +4,10 @@ import Image from "next/image";
 
 export default function HowItWorks() {
   return (
-    <section className="px-4 py-12 w-fit mx-auto flex flex-col items-center bg-[#F6F6F6] justify-center ">
+    <section
+      id="how"
+      className="px-4 py-12 w-fit mx-auto flex flex-col items-center bg-[#F6F6F6] justify-center "
+    >
       <div className=" mx-auto flex flex-col items-center justify-center">
         <h1 className="text-3xl md:text-4xl text-center font-bold mb-8 text-gray-800">
           How we transform health monitoring.
@@ -78,7 +81,7 @@ export default function HowItWorks() {
                 <div className="w-full lg:w-1/2 text-[#212529] flex flex-col">
                   <div className=" mx-auto text-start">
                     <h1 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
-                      Clinicians’ Interface
+                      Clinician’s Interface
                     </h1>
                     <p className="text-lg text-gray-600 leading-relaxed tracking-wide mb-6">
                       The platform displays wearable-derived vitals to
