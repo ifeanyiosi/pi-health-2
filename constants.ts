@@ -164,7 +164,7 @@ export const products = [
   {
     id: "4",
     name: "Smart Sleep Monitor",
-    category: "Smartwatch",
+    category: "Belt",
     image: "/products/sleep.png",
     price: 179.99,
     features: [
