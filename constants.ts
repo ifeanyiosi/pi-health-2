@@ -112,7 +112,7 @@ export const heroLinks = [
 export const products = [
   {
     id: "1",
-    name: "Smart Watch",
+    name: "Smart Watch for COPD",
     category: "Smartwatch",
     image: "/products/smart-watch-1.png",
     price: 199.99,
@@ -158,7 +158,7 @@ export const products = [
   },
   {
     id: "4",
-    name: "Pi-sense Fitness Watch",
+    name: "Smart Watch for Heart Disease",
     category: "Smartwatch",
     image: "/products/smart-belt-1.jpg",
     price: 179.99,
