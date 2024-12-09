@@ -20,6 +20,11 @@ export const menuLinks = [
     name: "Contact",
     href: "/contact",
   },
+
+  {
+    name: "Team",
+    href: "/team",
+  },
 ];
 
 export const whatCustomersDo = [
@@ -145,7 +150,7 @@ export const products = [
     id: "3",
     name: "Atrial Fibrillation belt",
     category: "Belt",
-    image: "/products/heart-rate-monitor.jpg",
+    image: "/products/snipe-belt.png",
     price: 179.99,
     features: [
       "ECG Monitoring for Atrial Fibrillation Detection",
@@ -158,9 +163,9 @@ export const products = [
   },
   {
     id: "4",
-    name: "Smart Watch for Heart Disease",
+    name: "Smart Sleep Monitor",
     category: "Smartwatch",
-    image: "/products/smart-belt-1.jpg",
+    image: "/products/sleep.png",
     price: 179.99,
     features: [
       "Heart Rate (HR) Monitoring via PPG Sensors",
@@ -193,7 +198,7 @@ export const products = [
 export const productsPage = [
   {
     id: "1",
-    name: "Pi-sense Smart Ring",
+    name: "Smart Watch for COPD",
     category: "Smartwatch",
     image: "/products/bg-ring.jpg",
     price: 199.99,

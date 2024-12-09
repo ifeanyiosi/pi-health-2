@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 
 export default function MeetTheTeam() {
   const teamMembers = [
@@ -64,14 +64,14 @@ export default function MeetTheTeam() {
             key={index}
             className="bg-white shadow-lg rounded-lg p-6 text-center"
           >
-            <div className="relative w-32 h-32 mx-auto mb-4">
+            {/* <div className="relative w-32 h-32 mx-auto mb-4">
               <Image
                 src={member.image}
                 alt={member.name}
                 className="rounded-full object-cover"
                 fill
               />
-            </div>
+            </div> */}
             <h2 className="text-xl font-semibold">{member.name}</h2>
             <p className="text-sm text-gray-500 mb-4">{member.title}</p>
             <p className="text-sm text-gray-700">{member.description}</p>
